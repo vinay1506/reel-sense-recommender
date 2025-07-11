@@ -43,3 +43,64 @@ vinay1506-reel-sense-recommender/
     ├── ratings.csv
     ├── movies.csv
     └── ...
+
+<h2>⚙️ Installation & Setup</h2> <h3>📦 Backend (Django)</h3>
+bash
+Copy
+Edit
+# 1. Clone the repository
+git clone https://github.com/vinay1506/reel-sense-recommender.git
+cd reel-sense-recommender/backend
+
+# 2. Create virtual environment
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Run Django server
+python manage.py runserver
+<h4>🔗 API Endpoints</h4>
+GET /api/recommend/?user_id=10 → Collaborative filtering for user ID
+
+GET /api/recommend-by-title/?title=The Matrix → Content-based filtering
+
+<h3>🌐 Frontend (React - Optional)</h3>
+bash
+Copy
+Edit
+# Navigate to frontend folder
+cd ../src
+
+# Install dependencies
+npm install
+
+# Start React development server
+npm run dev
+You can fetch data from the Django API and display movie recommendations in a rich, styled UI.
+
+<h2>🧠 Dataset</h2>
+This project uses the MovieLens 100k dataset, which contains:
+
+100,836 ratings
+
+9742 movies
+
+610 users
+
+Stored under dataset/.
+
+<h2>📈 Recommendation Techniques</h2> <h4>1. Collaborative Filtering</h4>
+Builds a user-item interaction matrix
+
+Computes cosine similarity between users
+
+Predicts movies based on neighbors’ preferences
+
+<h4>2. Content-Based Filtering</h4>
+Uses movie genres, titles, tags
+
+TF-IDF vectorization + cosine similarity
+
+Recommends movies with similar content
