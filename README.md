@@ -27,7 +27,7 @@
 
 <h2>📂 Project Structure</h2>
 
-```bash
+
 vinay1506-reel-sense-recommender/
 ├── backend/                    # Django backend
 │   ├── recommender/
@@ -43,6 +43,14 @@ vinay1506-reel-sense-recommender/
     ├── ratings.csv
     ├── movies.csv
     └── ...
+
+<h4>2. Content-Based Filtering</h4>
+Uses movie genres, titles, tags
+
+TF-IDF vectorization + cosine similarity
+
+Recommends movies with similar content
+
 
 <h2>⚙️ Installation & Setup</h2> <h3>📦 Backend (Django)</h3>
 bash
@@ -104,3 +112,46 @@ Uses movie genres, titles, tags
 TF-IDF vectorization + cosine similarity
 
 Recommends movies with similar content
+About
+No description, website, or topics provided.
+Resources
+ Readme
+ Activity
+Stars
+ 0 stars
+Watchers
+ 1 watching
+Forks
+ 0 forks
+Releases
+No releases published
+Create a new release
+Packages
+No packages published
+Publish your first package
+Languages
+TypeScript
+67.1%
+ 
+Python
+31.1%
+ 
+CSS
+1.1%
+ 
+Other
+0.7%
+Suggested workflows
+Based on your tech stack
+Datadog Synthetics logo
+Datadog Synthetics
+Run Datadog Synthetic tests within your GitHub Actions workflow
+Deno logo
+Deno
+Test your Deno project
+Python package logo
+Python package
+Create and test a Python package on multiple Python versions.
+More workflows
+Footer
+© 2025 
